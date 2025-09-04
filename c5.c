@@ -6,7 +6,7 @@ int main()
 {
     int j;
     int y=0;
-    printf("how many odd numbers you want :");
+    printf("enter a number :");
     scanf("%d",&j);
  
     for(int i=1; i ;i++ )

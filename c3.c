@@ -3,26 +3,24 @@
 #include <math.h>
 
 
-  int isprime(int x){
-    if (x<2)
-    return 0;
-    for (int i = 2 ; i * i <= x ; i++){
-    if(x % i == 0)
-    return 0;
-    }
-    return 1;
-}
-
 int main(){
+
+int num; 
+int n; 
 int j;
-printf("enter a number : ");
-scanf("%d",&j);
+printf("enter number :");
+scanf("%d" , &num);
+for(n = 2 ; n <=num ; n++){
 
-for(int i = 0; i <= j; i++){
-if (isprime(i)){
-printf("%d   ",i);
-}
-}
-return 0;
-}
+ for(j = 2 ; j < n ; j++ )
+       if(n % j == 0)
+        break;
 
+
+       if(n==j)
+        printf("%d\n",n);
+
+
+  }
+return 0 ;
+}
